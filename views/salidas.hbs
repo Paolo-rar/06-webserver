@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Salidas Diarias | {{titulo}}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="subpage">
+
+		{{> headerAlt}}
+		{{> navbar}}
+
+		<!-- Content -->
+		<section id="post" class="wrapper bg-img" data-bg="banner5.jpg">
+			<div class="inner">
+				<article class="box">
+					<header>
+						<h2>Salidas Diarias</h2>
+						<p>Nueva ruta — ejemplo de despliegue de cambios</p>
+					</header>
+					<div class="content">
+						<p>Esta página fue creada como práctica del flujo de actualización en Railway o Heroku. Representa la sección <strong>"Desplegar Nuevos Cambios"</strong> del laboratorio de Node de 0 a Experto.</p>
+
+						<p>El proceso consiste en: agregar la opción en <code>navbar.hbs</code>, crear la vista <code>salidas.hbs</code> en la carpeta <code>views/</code>, registrar el endpoint <code>/salidas</code> en <code>app.js</code>, hacer commit y push al repositorio remoto (GitHub), y Railway/Heroku detecta el cambio y redespliega automáticamente.</p>
+
+						<p>Railway escucha los cambios en el repositorio de GitHub. Una vez que se hace <code>git push origin main</code>, la nueva versión se publica en la nube en cuestión de segundos sin necesidad de configuración adicional.</p>
+					</div>
+					<footer>
+						<ul class="actions">
+							<li><a href="/" class="button alt icon fa-home"><span class="label">Home</span></a></li>
+							<li><a href="/generic" class="button alt icon fa-chevron-right"><span class="label">Generic</span></a></li>
+						</ul>
+					</footer>
+				</article>
+			</div>
+		</section>
+
+		{{> footer}}
+
+	</body>
+</html>
